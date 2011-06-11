@@ -10,7 +10,7 @@
  * @copyright  2011 Variu Sergiu
  * @license    Free
  * @version    v.1.0
- * @package    Registry
+ * @package    Core Object
  */
 class Registry
 {
