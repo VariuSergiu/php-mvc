@@ -26,7 +26,7 @@ abstract class AppController
      */
     protected $registry;
 
-    function  __construct($registry)
+    public function  __construct($registry)
     {
         $this->registry = $registry;
     }

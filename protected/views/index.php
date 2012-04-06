@@ -10,7 +10,7 @@
     <span class="game-txt">
         <?php echo $datas['body']; ?>
     </span>
-    <p><a href="http://localhost/php-mvc/product/add&id=<?php echo $datas['id']; ?>">
+    <p><a href="http://localhost/php-mvc/product/add&id=<?php echo $datas['id']; ?>" >
         <img src="../protected/views/images/buyme.png" alt="buy me" class="buyme" /></a>  <?php echo $datas['price']; ?></p>
 
 <?php endforeach; ?>

@@ -1,7 +1,7 @@
 <?php
 
 // define our environment
-define('ENVIRONMENT', 'live');
+define('ENVIRONMENT', 'development');
 
 //start our session
 session_start();

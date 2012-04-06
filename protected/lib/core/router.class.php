@@ -100,9 +100,8 @@ class Router
         $this->getController();
 
         //check if file is not there
-        if (is_readable($this->_file) == false) {
-            //echo $this->file;
-            die('404 Not found');
+        if (is_readable($this->_file) === false) {
+            throw new Exception('error 404 not found');
         }
 
         //include the controller
@@ -113,10 +112,10 @@ class Router
         $controller = new $class($this->_registry);
 
         //check if the action is callable
-        if (is_callable(array($controller, $this->action)) == false) {
+        if (is_callable(array($controller, $this->_action)) === false) {
             $action = 'index';
         } else {
-            $action = $this->action;
+            $action = $this->_action;
         }        
         //run the action
         $controller->$action();
